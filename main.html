@@ -1,0 +1,879 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <link rel="icon" href="img/icon-title-course-4.png" type="image/png" />
+    <title>Amazing</title>
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <link rel="stylesheet" href="./css/css/createCourse.css" />
+    <link rel="stylesheet" href="./csscss/bootstrap.css" />
+    <link rel="stylesheet" href="vendors/linericon/style.css" />
+    <link rel="stylesheet" href="./csscss/font-awesome.min.css" />
+    <link rel="stylesheet" href="./csscss/themify-icons.css" />
+    <link rel="stylesheet" href="vendors/owl-carousel/owl.carousel.min.css" />
+    <link rel="stylesheet" href="vendors/lightbox/simpleLightbox.css" />
+    <link rel="stylesheet" href="vendors/nice-select/css/nice-select.css" />
+    <link rel="stylesheet" href="vendors/animate-css/animate.css" />
+    <link rel="stylesheet" href="vendors/jquery-ui/jquery-ui.css" />
+    <!-- main css -->
+    <link rel="stylesheet" href=".css/css/style.css" />
+    
+      <!-- <style>
+        .banner{
+      height: 210px;
+      width: 100%;
+      background-image:url("img/banner-2.jpg") ;
+      background-size: cover;
+      background-position: center
+    }
+    .banner2{
+      height: 130px;
+      width: 100%;
+      background-image:url("img/overlay-bg.jpg") ;
+      background-size: cover;
+      background-position: center
+    }
+
+    .avt_mentor{
+      height: 80px;
+      width: 80px;
+      top: 100px;
+      left: 30%;
+      right: 30%;
+      z-index: 2;
+      justify-content: center;
+      background-size: cover;
+      background-position: center ;
+      position: absolute;
+    }
+    .chu{
+      position: "absolute"; 
+      height: 210px;
+      width: 100%;
+      background-color: rgba(8, 5, 90, 0.727); 
+      padding: 50px; 
+      opacity: 5;
+      text-align: center;
+    }
+
+    .input{
+      width: 100%;
+      padding: 5px 20px;
+      /* border-radius: 5px;
+      border-color: rgb(116, 117, 118); */
+    }
+    .btn-orange {
+      background-color: rgb(255, 103, 21);
+      width: 100%;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+      cursor: pointer;
+      margin-bottom: 10px;
+    }
+    
+    .border{
+      border-radius: 15px;
+    }
+    .icon_collor {
+      color: rgb(255, 89, 0);
+      width: 20px;
+      height: 20px;
+    }
+    .line {
+      height: 1px;
+      width: 100%;
+      background-color: #dcd9d9;
+      margin-top: 10px;
+      margin-bottom: 10px;
+    }
+
+    .img_upload{
+      height: 150px;
+      width: 150px;
+      top: 10px;
+      left: 5%;
+      right: 5%;
+      z-index: 2;
+      justify-content: center;
+      background-size: cover;
+      background-position: center ;
+    }
+
+    
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+  }
+  /* .container {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      background-color: rgb(255, 240, 222);
+  } */
+
+  /* #file_input {
+      display: none;
+  } */
+
+
+  /* .preview {
+      padding: 30px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      width: 100%;
+      max-width: 350px;
+      margin: auto;
+      background-color: rgb(255, 255, 255);
+      box-shadow: 0 0 20px rgba(170, 170, 170, 0.2);
+  } */
+
+  /* .img2 {
+      width: 100%;
+      object-fit: cover;
+      margin-bottom: 20px;
+  } */
+
+  .label2 {
+      font-weight: 600;
+      cursor: pointer;
+      color: #fff;
+      border-radius: 8px;
+      padding: 10px 20px;
+      background-color: rgb(255, 150, 101);
+  }
+
+  .custom-file-button input[type="file"] {
+      margin-left: -2px !important;
+  }
+      
+  .custom-file-button input[type="file"]::-webkit-file-upload-button {
+      display: none;
+  }
+      
+  .custom-file-button input[type="file"]::file-selector-button {
+      display: none;
+  }
+      
+  .custom-file-button:hover label {
+      background-color: #dde0e3;
+      cursor: pointer;
+  }
+
+
+  /* //////////// textarea */
+
+  #counter {
+    margin-top: 10px;
+  }
+
+  /* ///// */
+
+  /* .wrapper {
+    padding: 20px 28px;
+    margin: 0;
+    width: 580px;
+    background-color: #273c75;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    flex-flow: row wrap;
+    border: solid 2px white;
+  } */
+
+  .p_tag {
+    margin: 10px 10px;
+    font-weight: 300;
+    font-size: 14px;
+    opacity: 0.8;
+    letter-spacing: 1px;
+  }
+  .input_tag2 {
+    /* border: none; */
+    /* border-radius: 12px; */
+    /* padding: 6px 5px; */
+    margin: 3px;
+    width: 100%;
+    /* color: #666; */
+    font-family: 'Work Sans', sans-serif;
+    font-size: 16px;
+    /* outline: none; */
+  }
+  .input_tag {
+    /* border: none; */
+    /* border-radius: 12px; */
+    /* padding: 6px 5px; */
+    margin: 8px;
+    width: 100%;
+    color: #666;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 16px;
+    /* outline: none; */
+  }
+
+  .tag-container {
+    height: 40px;
+    display: flex;
+    flex-flow: row-reverse nowrap;
+    /* flex-flow: row wrap; */
+  }
+
+  .tag{
+    border: solid 1px rgb(0, 0, 0);
+    border-radius: 5px;
+    pointer-events: none;
+    background-color: #fffdfd;
+    color: rgb(0, 0, 0);
+    padding: 6px;
+    margin: 5px;
+  }
+
+  .tag::before {
+    pointer-events: all;
+    display: inline; 
+    content: 'x';  
+    height:40px;
+    width: 60px;
+    margin-right: 6px;
+    text-align: center;
+    color: #000000;
+    background-color: #d7d3d3;
+    cursor: pointer;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+      </style> -->
+  </head>
+</head>
+<body>
+
+    <!-- ===== banner ===== -->
+    <div class="banner">
+      <div class="chu">
+        <h1 style="color: #ff3700">Danh sách khoá học</h1> 
+        <p style="color: white">Trang chủ > Tạo khoá học</p>
+      </div>
+    </div> 
+
+    <!-- ===== Banner ===== -->
+    
+
+    <section class="cat_product_area p-3" style="background-color: rgba(249, 247, 247, 0.903);">
+        <div class="container">
+          <div class="row ">
+              <!-- Cột trái -->
+            <div class="col-sm-4" >
+              <div class="border p-3" style="background-color: rgb(255, 255, 255);">
+                <div class="banner2 ">
+                  <div class=" d-flex">
+                      <img 
+                      class=" avt_mentor ml-auto mr-auto"
+                      src="./img/images/avatar-mentor-1.jpg"
+                      />
+                  </div>
+                </div>
+
+                <div class="d-flex pt-5">
+                  <div class="ml-auto mr-auto p-4 text-center">
+                    <h3 >Mentor Cường</h3>
+                    <h6 style="color: rgb(146, 140, 140);">Mentor</h6>
+                    <div style="display: block;">
+                      <i class="bi bi-facebook p-1">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-facebook icon_collor" viewBox="0 0 16 16">
+                          <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
+                        </svg>
+                      </i>
+                      <i class="bi bi-linkedin p-1">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-linkedin icon_collor" viewBox="0 0 16 16">
+                          <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"/>
+                        </svg>
+                      </i>
+                      <i class="bi bi-youtube p-1">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-youtube icon_collor" viewBox="0 0 16 16">
+                          <path d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.007 2.007 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.007 2.007 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31.4 31.4 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.007 2.007 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A99.788 99.788 0 0 1 7.858 2h.193zM6.4 5.209v4.818l4.157-2.408L6.4 5.209z"/>
+                        </svg>
+                      </i>
+                    </div>
+                    <div class="p-3" >
+                      <i class="bi bi-person-fill "style="zoom: 150%;">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-fill icon_collor" viewBox="0 0 16 16">
+                          <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3Zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z"/>
+                        </svg>
+                      </i>
+                      <h6 class=" pt-2" style="color: rgb(146, 140, 140);">27/01/2001</h6>
+                    </div>
+                    <!-- ////địa chỉ -->
+                    <div>
+                      <div class="d-flex">
+                        <i class="bi bi-geo-alt-fill pr-2 ml-auto mr-auto">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt-fill icon_collor" viewBox="0 0 16 16">
+                            <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/>
+                          </svg>
+                        </i>
+                        <p class="  " style="color: rgb(146, 140, 140);">Tân Bình, TP. Hồ Chí Minh</p>
+                      </div>
+                      <!-- mail -->
+                      <div class="d-flex">
+                        <i class="bi bi-envelope-fill pr-2 ">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope-fill icon_collor" viewBox="0 0 16 16">
+                            <path d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555ZM0 4.697v7.104l5.803-3.558L0 4.697ZM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757Zm3.436-.586L16 11.801V4.697l-5.803 3.546Z"/>
+                          </svg>
+                        </i>
+                        <p class="" style="color: rgb(146, 140, 140);">mentor@gmail.com</p>
+                      </div>
+                      <!-- phone -->
+                      <div class="d-flex">
+                        <i class="bi bi-telephone-fill pr-2">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telephone-fill icon_collor" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/>
+                          </svg>
+                        </i>
+                        <p class="" style="color: rgb(146, 140, 140);"> 0946005077</p>
+                      </div>
+                      <!-- số dư -->
+                      <div class="d-flex">
+                        <p class="" style="color: rgb(146, 140, 140);">Số dư hiện tại: </p>
+                        <p style="color: rgb(255, 89, 0);">300.000 BS</p>
+                      </div>
+                    </div>
+                    </div>
+                    
+                </div>
+                <button class="btn-orange">Chỉnh sửa thông tin</button>
+                <button class="btn-orange">Quản lý rút tiền</button>
+                <button class="btn-orange">Rút tiền</button>
+                <button class="btn-orange">Danh sách khoá học</button>
+              </div> 
+
+              <div class="border mt-3 p-3" style="background-color: rgb(255, 255, 255);">
+                <div >
+                  <h5>Các hoạt động gần đây</h5>
+                  <p>Đã đăng ký khoá học ReactJS Basic</p>
+                  <p style="color: rgb(255, 89, 0);">01/01/2023</p>
+                  <p class="line"></p>
+                  <p>Đã nhận được 100 BS từ việc chia sẽ khoá học</p>
+                  <p style="color: rgb(255, 89, 0);">01/01/2023</p>
+                  <p class="line"></p>
+                </div>
+              </div>
+            </div>
+            
+
+            <!-- cột phải -->
+            <div class="col-sm-8 ">
+              <div class="border " style="background-color: rgb(232, 232, 232);">
+                <div class=" pt-3 pl-3 pr-3">
+                  <div id="toggle" class="d-flex">
+                    <p >Thông tin khoá học</p>
+                    <span id="span_TTKH" class="ti-angle-down mt-auto mb-auto ml-auto"></span>
+                    
+                  </div>
+                  <!-- <div  class="ti-angle-down ml-auto"></div> -->
+                </div>
+                
+                <div class=" " style="background-color: rgb(255, 255, 255);">
+                  <nav class="p-4 " id=" main-menu" style="border: 1px solid rgb(43, 43, 43); ">
+                    <form method="post" action="url">
+                      <!-- /////// name-->
+                      <label for="name" style="color: black;">Tên Khoá học</label> <br/>
+                      <input class="input mb-3" type="text" id="name"  name="name" oninput="validateName()"/>
+                      <small></small> </br>
+                      <!-- <input class="input mb-3" type="text" id="name" placeholder="Full Name" name="name" required minlength="3" maxlength="100" /><br/> -->
+                      <!-- //////// radio btn-->
+                      <label class="mt-4 mr-2 " style="color: black;">Trình độ: </label>
+                      <input class="mt-4 mr-2 ml-2" type="radio" name="gioitinh" value="0" checked> Beginner
+                      <input class="mt-4 mr-2 ml-2" type="radio" name="gioitinh" value="1" > Intermediate
+                      <input class="mt-4 mr-2 ml-2" type="radio" name="gioitinh" value="2"> Advanced
+                      <input class="mt-4 mr-2 ml-2" type="radio" name="gioitinh" value="3"> Expert
+                      <!-- /////// munber -->
+                      <br/>
+                      <label for="course-price" style="color: black;">Giá tiền:</label> <br/>
+                      <input id="course-price" data-type="currency" class="input mb-3" type="text" value="" aria-describedby="price-error"/>
+                      <!-- <p id="output-amount"></p> -->
+
+                      
+                        <!-- <label for="course-price" class="form-label">Giá tiền:</label>
+                        <input type="text" data-type="currency" class="form-control form-control-sm" id="course-price"
+                            aria-describedby="price-error"> -->
+
+
+                      <!-- ///////////// upload img -->
+                      <div>
+                        <div class="d-flex mt-4" id="img_up">
+                        <img
+                          id="imgPreview"
+                          class="img-thumbnail ml-auto mr-auto "
+                          width="500" height="500"
+                          src="img/upload-img.jpg"
+                        />
+                        </div>
+                        <div class="m-3" >
+                          <div class="d-flex justify-content-center">
+                            <label class="mt-auto mb-auto ml-3" style="width: 90px; color: black;">Hình ảnh: </label>
+                            <div class="input-group2 custom-file-button">
+                              <label class="input-group-text mt-3 mb-3" for="inputGroupFile">Chọn tệp</label>
+                              <input type="file" class="form-control mt-3 mr-3 mb-3" id="inputGroupFile" accept="image/*">
+                            </div>
+                            <button id="btn_reset_file"class="mt-auto mb-auto" style="width: 90px; " type="button" onclick="removeImg()">Xoá ảnh</button>
+                          </div>
+                        </div>
+                      </div>
+
+                      <!-- ///////// radio btn -->
+                      <label style="color: black;">Lĩnh vực:</label> <br/>
+                      <div  style="display: flex; color: black;">
+                          <select class=" sorting form-select" aria-label="Default select example">
+                            <option value="1">Front End</option>
+                            <option value="2">Back End</option>
+                            <option value="3">Fullstack</option>
+                          </select>
+                      </div>
+                      
+                      <label class="mt-3" style="color: black;">HÌnh thức khoá học:</label> <br/>
+                      <div  style="display: flex; color: black;">
+                          <select class=" sorting form-select" aria-label="Default select example">
+                            <option value="1">Online</option>
+                            <option value="2">Offline</option>
+                          </select>
+                      </div>
+                      <!-- ////////////////// gg meet -->
+                      <label class="mt-3" style="color: black;" for="website">Link Google Meet:</label> <br/>
+                      <input class="input mb-3" type="url" id="website" placeholder="https://meet.google.com/..." name="website" required pattern="https://meet.google.com/[a-z]{3}-[a-z]{4}-[a-z]{3}" />
+                      <small id="website-error" class="text-danger"></small>  </br>
+                      
+                      <!-- /////////////////////  số lượng -->
+
+                      <label class="mt-3" style="color: black;">Số lượng học viên:</label> <br/>
+
+                      <!-- <div class="d-flex">
+                        <label id="min" class="ml-3 mt-auto mb-auto" style="color: black;">Min:</label>
+                        <input class=" ml-3 mt-auto mb-auto" style="width: 40px;" type="number" min="0" >
+                        <label id="max" class="ml-3 mt-auto mb-auto" style="color: black;">Max:</label>
+                        <input class=" ml-3 mt-auto mb-auto" style="width: 40px;" type="number" min="0" >
+                      </div> -->
+                      <div id="quantity" class="d-flex">
+                        <div class=" mt-auto mb-auto d-flex">
+                            <label for="quantity-min" class=" mt-auto mb-auto">Min:</label>
+                            <input type="number" class="ml-2 mt-auto mb-auto" style="width: 50px;" id="quantity-min" oninput="validNumber()"
+                                aria-describedby="quantity-min">
+                        </div>
+                        <div class=" mt-auto mb-auto d-flex">
+                            <label for="quantity-max" class="ml-2 mt-auto mb-auto">Max:</label>
+                            <input type="number" class="ml-2 mt-auto mb-auto" style="width: 50px;" id="quantity-max" oninput="validNumber()"
+                                aria-describedby="quantity-max">
+                        </div>
+                      </div>
+                      <small id="small_MinMax" style="margin-left:10px; font-size:14px; color:red"></small><br/>
+                      
+                      
+                      <!-- /////////////////  tag -->
+
+                      <label class="mt-3" style="color: black;">Tag:</label> <br/>
+                      <div class="d-flex border_tag">
+                        <div class="tag-container mt-auto mb-auto d-flex"></div>
+                        <input class="input  input_tag mt-auto mb-auto" type="text" id="hashtags" autocomplete="off"> <br/>
+                      </div>
+                      
+                        
+                      
+                      
+                      <!-- ////////////// mô tả 200 -->
+
+                      <label class="mt-4" style="color: black;">Mô tả Khoá học:</label> <br/>
+                      <div class="p-3 " style="background-color: antiquewhite;">
+                        <div class="m-3 d-flex" >
+                          <textarea class="ml-auto mr-auto " id="input" rows="5" cols="70"></textarea>
+                          
+                        </div>
+                        <div class="d-flex">
+                          <div class="ml-auto mr-5" id="counter" ></div>
+                        </div>
+
+                      </div>
+                    </form>
+                  </nav>
+                </div>
+                
+              </div> 
+              
+            </div>
+            <!-- Kết thúc cột phải -->
+                
+          </div>
+
+        </div>
+
+    </section>
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/popper.js"></script>
+    <script src="js/stellar.js"></script>
+    <script src="vendors/lightbox/simpleLightbox.min.js"></script>
+    <script src="vendors/nice-select/js/jquery.nice-select.min.js"></script>
+    <script src="vendors/isotope/imagesloaded.pkgd.min.js"></script>
+    <script src="vendors/isotope/isotope-min.js"></script>
+    <script src="vendors/owl-carousel/owl.carousel.min.js"></script>
+    <script src="js/jquery.ajaxchimp.min.js"></script>
+    <script src="js/mail-script.js"></script>
+    <script src="vendors/jquery-ui/jquery-ui.js"></script>
+    <script src="vendors/counter-up/jquery.waypoints.min.js"></script>
+    <script src="vendors/counter-up/jquery.counterup.js"></script>
+    <script src="js/theme.js"></script>
+    <script>
+
+      const input = document.getElementById('inputGroupFile');
+      const image = document.getElementById('imgPreview');
+
+      input.addEventListener('change', (e) => {
+          if (e.target.files.length) {
+              const src = URL.createObjectURL(e.target.files[0]);
+              image.src = src;
+          }
+      });
+
+      // ////////textarea giới hạn ký tự
+      // Lấy phần tử textarea và phần tử div hiển thị số ký tự
+      var inputTextarae = document.getElementById("input");
+      var counter = document.getElementById("counter");
+
+      // Giới hạn số ký tự nhập vào là 200
+      var maxLength = 200;
+
+      // Thêm sự kiện nhập vào textarea
+      inputTextarae.addEventListener("input", function() {
+      // Lấy số ký tự đang có trong textarea
+      var currentLength = inputTextarae.value.length;
+      // Tính số ký tự còn lại có thể nhập
+      var remainingLength = maxLength - currentLength;
+      // Cập nhật số ký tự đang có trên trang web
+      counter.innerHTML = currentLength + "/" + maxLength;
+      // Nếu số ký tự nhập vào vượt quá giới hạn thì cắt bớt đi
+      if (currentLength > maxLength) {
+        inputTextarae.value = inputTextarae.value.slice(0, maxLength);
+      }
+      // Nếu số ký tự còn lại bằng 0 thì không cho phép nhập thêm
+      if (remainingLength === 0) {
+        inputTextarae.setAttribute("readonly", true);
+      } else {
+        inputTextarae.removeAttribute("readonly");
+      }
+
+      });
+      
+
+      // var numbers = [1, 12, 123, 1234, 12345, 123456, 1234567, 12345.67];
+
+
+      // for (var i = 0; i < numbers.length; i++) {
+      // console.log(format2(numbers[i], 'vnd '));
+      // }
+      
+      </script>
+      <script>
+        //   function validateInput() {
+        //   var inputkytu = document.getElementById("kytu").value;
+        //   if (inputkytu.length < 3) {
+        //     document.getElementById("kytu").setCustomValidity("Vui lòng nhập ít nhất 3 ký tự.");
+        //   } else {
+        //     document.getElementById("kytu").setCustomValidity("");
+        //   }
+        // }
+
+        //   document.getElementById("kytu").addEventListener("inputkytu", validateInput);
+
+
+
+        // //////// 3 ký tự
+        function validateName() {
+        const courseName = document.getElementById('name');//trỏ tới thẻ input
+        const small = courseName.parentElement.querySelector('small');
+        if (courseName.value.length < 3) {
+            document.getElementById('name').style.borderColor = "rgb(255, 25, 0)";
+            courseName.parentElement.classList.add('error')
+            small.innerText = "Vui lòng nhập từ 3 kí tự trở lên";
+            small.style.color = "rgb(255, 25, 0)";
+        }
+        else {
+            document.getElementById('name').style.borderColor = "green";
+            courseName.parentElement.classList.remove('error')
+            small.innerText = "";
+        }
+    }
+      
+      
+      </script>
+
+      <!-- /////giá giền vnd 1.111.111 -->
+      <script>
+        // function convertToVND() {
+        //   var input = document.getElementById("input-amount");
+        //   var inputAmount = input.value;
+        //   var parsedAmount = parseInt(inputAmount);
+        //   var formattedAmount = parsedAmount.toLocaleString('vi', {style: 'currency', currency: 'VND'}).replace('₫', 'VNĐ');
+  
+        //   input.value = formattedAmount;
+        //   // document.getElementById("output-amount").innerHTML = formattedAmount;
+        // }
+          // Format Money
+        $("input[data-type='currency']").on({
+            keyup: function () {
+                formatCurrency($(this));
+            },
+            blur: function () {
+                formatCurrency($(this), "blur");
+            }
+        });
+
+
+        function formatNumber(n) {
+            // format number 1000000 to 1,234,567
+            return n.replace(/\D/g, "").replace(/\B(?=(\d{3})+(?!\d))/g, ".")
+        }
+
+
+        function formatCurrency(input, blur) {
+            // appends $ to value, validates decimal side
+            // and puts cursor back in right position.
+
+            // get input value
+            var input_val = input.val();
+
+            // don't validate empty input
+            if (input_val === "") { return; }
+
+            // original length
+            var original_len = input_val.length;
+
+            // initial caret position 
+            var caret_pos = input.prop("selectionStart");
+
+            // check for decimal
+            if (input_val.indexOf(",") >= 0) {
+
+                // get position of first decimal
+                // this prevents multiple decimals from
+                // being entered
+                var decimal_pos = input_val.indexOf(",");
+
+                // split number by decimal point
+                var left_side = input_val.substring(0, decimal_pos);
+                var right_side = input_val.substring(decimal_pos);
+
+                // add commas to left side of number
+                left_side = formatNumber(left_side);
+
+                // validate right side
+                right_side = formatNumber(right_side);
+
+                // On blur make sure 2 numbers after decimal
+                if (blur === "blur") {
+                    right_side += "00";
+                }
+
+                // Limit decimal to only 2 digits
+                right_side = right_side.substring(0, 2);
+
+                // join number by .
+                input_val = left_side + "," + right_side + " VND";
+
+            } else {
+                // no decimal entered
+                // add commas to number
+                // remove all non-digits
+                input_val = formatNumber(input_val);
+                input_val = input_val + " VND";
+
+                // final formatting
+                if (blur === "blur") {
+                    input_val += "";
+                }
+            }
+
+            // send updated string to input
+            input.val(input_val);
+
+            // put caret back in the right position
+            var updated_len = input_val.length;
+            caret_pos = updated_len - original_len + caret_pos;
+            input[0].setSelectionRange(caret_pos, caret_pos);
+        }
+        
+
+      </script>
+
+
+      <!-- ////uploas-delete ảnh -->
+      <script>
+        var i = document.getElementById("inputGroupFile")
+        var a = document.getElementById("imgPreview");
+        function readUrl(input){
+          if(input.files){
+              var reader = new FileReader();
+              reader.readAsDataURL(input.files[0]);
+              reader.onload=(e)=>{
+                  a.src = e.target.result;
+              }
+          }
+          }
+
+          var inputFile = document.getElementById("inputFile");
+        removeImg=()=>{
+          a.src="img/upload-img.jpg"; 
+          inputFile.value="";
+        }
+
+        $(document).ready(function() {
+          $('#btn_reset_file').on('click', function() {     
+              $('#inputGroupFile').val('');
+          });
+        });
+      </script>
+
+<!-- ////min max số -->
+<script>
+  // const minInput = document.getElementById("min");
+  // const maxInput = document.getElementById("max");
+
+  // maxInput.addEventListener("input", () => {
+  //     if (maxInput.value < 0) {
+  //         maxInput.value = 0;
+  //     }
+  //     if (minInput.value > maxInput.value) {
+  //         minInput.value = maxInput.value;
+  //     }
+  // });
+  // if (min > max) {
+  //   document.getElementById("min").value = max - 1;
+  // }
+  function validNumber() {
+    const min = document.getElementById("quantity-min");
+    const max = document.getElementById("quantity-max");
+    const quantity = document.getElementById("quantity");
+    const smallMM = document.getElementById('small_MinMax');
+    if (parseInt(min.value, 10) < 0) {
+        min.value = 0;
+        document.getElementById("quantity-min").style.borderColor = "rgb(255, 25, 0)";
+        smallMM.innerText = "Giá trị min không được nhỏ hơn 0";
+    }
+    else if (parseInt(max.value, 10) < 0) {
+        max.value=0;
+        document.getElementById("quantity-max").style.borderColor = "rgb(255, 25, 0)";
+        smallMM.innerText = "Giá trị max không được nhỏ hơn 0";
+
+    }
+    else if (parseInt(min.value, 10) >= parseInt(max.value, 10)) {
+        min.value=max.value;
+        document.getElementById("quantity-min").style.borderColor = "rgb(255, 25, 0)";
+        document.getElementById("quantity-max").style.borderColor = "rgb(255, 25, 0)";
+        smallMM.innerText = "Giá trị min không được lớn hơn hoặc bằng giá trị max";
+    }
+    else {
+        smallMM.innerText = "";
+        document.getElementById("quantity-min").style.borderColor = "";
+        document.getElementById("quantity-max").style.borderColor = "";
+    }
+
+}
+</script>
+
+<!-- taggggg -->
+<script>
+  let input_tag, hashtagArray, container, t;
+
+  input_tag = document.querySelector('#hashtags');
+  container = document.querySelector('.tag-container');
+  hashtagArray = [];
+
+  input_tag.addEventListener('keyup', () => {
+      if (event.which == 13 && input_tag.value.length > 0) {
+        var text = document.createTextNode(input_tag.value);
+        var p = document.createElement('p');
+        container.appendChild(p);
+        p.appendChild(text);
+        p.classList.add('tag');
+        input_tag.value = '';
+        
+        let deleteTags = document.querySelectorAll('.tag');
+        
+        for(let i = 0; i < deleteTags.length; i++) {
+          deleteTags[i].addEventListener('click', () => {
+            container.removeChild(deleteTags[i]);
+          });
+        }
+      }
+  });
+</script>
+
+<!-- ////tt Khoá học rút gọn -->
+<script>
+  $(document).ready(function() {
+        $('#toggle').click(function() {
+          $('nav').slideToggle();
+          if (document.getElementById("span_TTKH").className.includes("ti-angle-down mt-auto mb-auto ml-auto")){
+            document.getElementById("span_TTKH").className = "ti-angle-up mt-auto mb-auto ml-auto";
+          } else {
+            document.getElementById("span_TTKH").className = "ti-angle-down mt-auto mb-auto ml-auto";
+          }
+        });
+      })
+</script>
+
+
+<script>
+  // function validateWeb() {
+        // const courseWeb = document.getElementById('website');//trỏ tới thẻ input
+        // const small1 = courseWeb.getElementById('small1');
+        // if (courseWeb.pattern != "https://meet.google.com/[a-z]{3}-[a-z]{4}-[a-z]{3} ") {
+        //     document.getElementById('website').style.borderColor = "rgb(255, 25, 0)";
+        //     courseWeb.parentElement.classList.add('error')
+        //     small1.innerText = "Không đúng định dạng, vui lòng nhập link Google Meet!";
+        //     small1.style.color = "rgb(255, 25, 0)";
+        // }
+        // else {
+        //     document.getElementById('website').style.borderColor = "green";
+        //     courseWeb.parentElement.classList.remove('error')
+        //     small1.innerText = "";
+        // }
+        // if (!courseWeb.value.match(/^https:\/\/meet\.google\.com\/[a-z]{3}-[a-z]{4}-[a-z]{3}$/)) { // sử dụng biểu thức chính quy để kiểm tra giá trị nhập vào
+        //     document.getElementById('website').style.borderColor = "rgb(255, 25, 0)";
+        //     courseWeb.parentElement.classList.add('error')
+        //     small1.innerText = "Đường dẫn không đúng định dạng của Google Meet, vui lòng kiểm tra lại!";
+        //     small1.style.color = "rgb(255, 25, 0)";
+        // } else {
+        //     document.getElementById('website').style.borderColor = "green";
+        //     courseWeb.parentElement.classList.remove('error')
+        //     small1.innerText = "";
+        // }
+
+        const courseWeb = document.getElementById('website');
+        const small = document.getElementById('website-error');
+
+        courseWeb.addEventListener('input', function(event) {
+          if (courseWeb.validity.valid) {
+            small.innerText = '';
+            small.className = 'text-danger';
+          } else {
+            small.innerText = 'Đường dẫn không đúng định dạng của Google Meet, vui lòng kiểm tra lại!';
+            small.className = 'text-danger active';
+          }
+        });
+
+      // }
+</script>
+</body>
+</html>
